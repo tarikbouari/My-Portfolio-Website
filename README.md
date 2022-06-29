@@ -1,9 +1,9 @@
 
-# hello-project
+# My-Portfolio-website
 
 # Description of the project.
 
-This project purpose is to master git and github and build project as a professional software developer.
+This is my  portfolio project that showcases my best work, personality and talents.  
 
 
 ## Built With
