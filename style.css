@@ -184,6 +184,11 @@ a {
   font-weight: 500;
 }
 
+.info-project .btn:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
 /* About-me Section */
 
 .about-me {
@@ -224,6 +229,11 @@ a {
   margin-top: 0.3rem;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.personal-info .btn:hover {
+  background: #6070ff;
+  color: #fff;
 }
 
 .code-lang {
