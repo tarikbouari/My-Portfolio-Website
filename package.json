@@ -1,0 +1,27 @@
+{
+  "name": "my-portofolio-website",
+  "version": "1.0.0",
+  "description": "This project purpose is to master git and github and build project as a professional software developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarikbouari/My-Portofolio-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarikbouari/My-Portofolio-Website/issues"
+  },
+  "homepage": "https://github.com/tarikbouari/My-Portofolio-Website#readme",
+  "devDependencies": {
+    "hint": "^7.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
