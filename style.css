@@ -149,16 +149,14 @@ a {
   gap: 0.8rem;
 }
 
+.about-me ul li {
+  list-style: none;
+}
+
 .info-project .specific li {
   margin-left: 1rem;
   color: #7a869a;
   font-weight: 600;
-}
-
-.info-project .specific li:first-child {
-  list-style: none;
-  color: #344563;
-  margin-left: 0;
 }
 
 .info-project .language li {
@@ -169,12 +167,29 @@ a {
   list-style: none;
 }
 
+.info-project .specific li:first-child {
+  list-style: none;
+  color: #344563;
+  margin-left: 0;
+}
+
 .info-project .language li:first-child {
   margin-left: 0;
 }
 
 .info-project .btn {
   padding: 1rem 1.4rem;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background: transparent;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.personal-info .btn {
+  padding: 1rem 1rem;
   border: 1px solid #6070ff;
   color: #396df2;
   background: transparent;
@@ -201,10 +216,6 @@ a {
   margin-top: 5rem;
 }
 
-.about-me ul li {
-  list-style: none;
-}
-
 .about-me h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -218,17 +229,6 @@ a {
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 6rem;
-}
-
-.personal-info .btn {
-  padding: 1rem 1rem;
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background: transparent;
-  border-radius: 0.5rem;
-  margin-top: 0.3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
 }
 
 .personal-info .btn:hover {
