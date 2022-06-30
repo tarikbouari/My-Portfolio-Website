@@ -18,9 +18,9 @@ This is my  portfolio project that showcases my best work, personality and talen
 
 👤 **Tarik Bouari**
 
-- GitHub: [@tarikbouari](https://github.com/githubhandle)
-- Twitter: [@tarikbouari](https://twitter.com/twitterhandle)
-- LinkedIn: [tarikbouari](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@tarikbouari](https://github.com/tarikbouari))
+- Twitter: [@tarikbouari](https://twitter.com/TarikBouari)
+- LinkedIn: [tarikbouari](https://www.linkedin.com/in/tarik-bouari-44b7191a6/)
 
 
 
