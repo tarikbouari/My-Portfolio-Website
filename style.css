@@ -132,7 +132,7 @@ a {
 .info-project {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .info-project .title {
@@ -180,6 +180,106 @@ a {
   background: transparent;
   border-radius: 0.5rem;
   margin-top: 0.3rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.8rem;
+  background-color: #fff;
+  border-radius: 0 6rem 0 0;
+  margin-top: 5rem;
+}
+
+.about-me h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 3rem;
+  max-width: 77%;
+}
+
+.about-me ul li  {
+  list-style: none;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 6rem;
+}
+
+.personal-info .btn { 
+  padding: 1rem 1rem;
+  border: 1px solid #6070FF;
+  color: #396DF2;
+  background: transparent;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.code-lang {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.code-lang ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.lang .arrow {
+  color:blue;
+}
+
+.lang-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.lang-child > div {
+  display: flex;
+  gap: 0.3rem;
+  background-color: #F7F7F9;
+  padding: 1rem;
+  align-items: center;
+}
+
+.lang-child > div p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 20px;
+  margin-left: 0.5rem;
+}
+
+.code-lang ul li:nth-child(2){
+  border-bottom: 1px solid #DFE1E6;
+  padding-bottom: 1rem;
+}
+
+.code-lang ul li:last-child {
+  border-bottom: 1px solid #DFE1E6;
+  padding-bottom: 1rem;
 }
