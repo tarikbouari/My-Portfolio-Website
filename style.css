@@ -109,7 +109,7 @@ a {
   height: 20px;
 }
 
-/*Project Section*/
+/* Project Section */
 
 .projects {
   display: grid;
@@ -123,7 +123,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5  rem;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
   padding: 1rem;
@@ -141,7 +141,7 @@ a {
   font-size: 40px;
   line-height: 3rem;
   max-width: 77%;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .info-project ul {
@@ -151,7 +151,7 @@ a {
 
 .info-project .specific li {
   margin-left: 1rem;
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 600;
 }
 
@@ -162,10 +162,10 @@ a {
 }
 
 .info-project .language li {
-  background: #EBEBFF;
+  background: #ebebff;
   padding: 0.3rem 0.7rem;
   border-radius: 0.7rem;
-  color:#6070FF;
+  color: #6070ff;
   list-style: none;
 }
 
@@ -173,16 +173,18 @@ a {
   margin-left: 0;
 }
 
-.info-project .btn { 
+.info-project .btn {
   padding: 1rem 1.4rem;
-  border: 1px solid #6070FF;
-  color: #396DF2;
+  border: 1px solid #6070ff;
+  color: #396df2;
   background: transparent;
   border-radius: 0.5rem;
   margin-top: 0.3rem;
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+/* About-me Section */
 
 .about-me {
   display: flex;
@@ -194,16 +196,16 @@ a {
   margin-top: 5rem;
 }
 
+.about-me ul li {
+  list-style: none;
+}
+
 .about-me h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 3rem;
   max-width: 77%;
-}
-
-.about-me ul li  {
-  list-style: none;
 }
 
 .personal-info {
@@ -213,10 +215,10 @@ a {
   margin-top: 6rem;
 }
 
-.personal-info .btn { 
+.personal-info .btn {
   padding: 1rem 1rem;
-  border: 1px solid #6070FF;
-  color: #396DF2;
+  border: 1px solid #6070ff;
+  color: #396df2;
   background: transparent;
   border-radius: 0.5rem;
   margin-top: 0.3rem;
@@ -240,16 +242,9 @@ a {
 .lang {
   display: flex;
   justify-content: space-between;
-}
-
-.lang {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-}
-
-.lang .arrow {
-  color:blue;
 }
 
 .lang-child {
@@ -262,7 +257,7 @@ a {
 .lang-child > div {
   display: flex;
   gap: 0.3rem;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   padding: 1rem;
   align-items: center;
 }
@@ -274,12 +269,12 @@ a {
   margin-left: 0.5rem;
 }
 
-.code-lang ul li:nth-child(2){
-  border-bottom: 1px solid #DFE1E6;
+.code-lang ul li :nth-child(2) {
+  border-bottom: 1px solid #dfe1e6;
   padding-bottom: 1rem;
 }
 
-.code-lang ul li:last-child {
-  border-bottom: 1px solid #DFE1E6;
+.code-lang ul li :last-child {
+  border-bottom: 1px solid #dfe1e6;
   padding-bottom: 1rem;
 }
