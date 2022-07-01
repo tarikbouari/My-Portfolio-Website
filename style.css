@@ -73,6 +73,14 @@ a {
   justify-content: center;
 }
 
+.lang-child > li {
+  display: flex;
+  gap: 0.3rem;
+  background-color: #f7f7f9;
+  padding: 1rem;
+  align-items: center;
+}
+
 .presentation ul li {
   list-style: none;
 }
@@ -213,7 +221,7 @@ a {
   padding: 1.8rem;
   background-color: #fff;
   border-radius: 0 6rem 0 0;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 .about-me h2 {
@@ -264,27 +272,9 @@ a {
   margin-top: 1rem;
 }
 
-.lang-child > div {
-  display: flex;
-  gap: 0.3rem;
-  background-color: #f7f7f9;
-  padding: 1rem;
-  align-items: center;
-}
-
-.lang-child > div p {
+.lang-child > li p {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 20px;
   margin-left: 0.5rem;
-}
-
-.code-lang ul li :nth-child(2) {
-  border-bottom: 1px solid #dfe1e6;
-  padding-bottom: 1rem;
-}
-
-.code-lang ul li :last-child {
-  border-bottom: 1px solid #dfe1e6;
-  padding-bottom: 1rem;
 }
