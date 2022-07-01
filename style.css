@@ -272,7 +272,7 @@ a {
   margin-top: 1rem;
 }
 
-.lang-child > li p {
+.lang-child > li h4 {
   font-weight: 500;
   font-size: 1rem;
   line-height: 20px;
