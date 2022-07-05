@@ -53,6 +53,10 @@ a {
   background-color: #fff;
 }
 
+h1.name {
+  margin-top: 6rem;
+}
+
 .nav-bar {
   width: 100%;
   height: 80px;
