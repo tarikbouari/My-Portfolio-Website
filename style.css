@@ -240,7 +240,6 @@ a {
   margin-top: 6rem;
 }
 
-
 .code-lang {
   display: flex;
   flex-direction: column;
@@ -340,11 +339,13 @@ form textarea {
   display: block;
   background: #fff;
 }
+
 .form .primary-button:hover {
   color: #fff;
-  border-color:white;
+  border-color: white;
   background: transparent;
 }
+
 .form .primary-button:active {
   border: none;
   background: #2230d2;
