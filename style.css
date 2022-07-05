@@ -22,6 +22,29 @@ a {
   text-decoration: none;
 }
 
+.primary-button {
+  padding: 1rem 1.4rem;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background: transparent;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background 0.21s;
+}
+
+.primary-button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.primary-button:active {
+  background: #2230d2;
+}
+
 .section-presentation {
   margin-top: 3rem;
   width: 100%;
@@ -189,33 +212,6 @@ a {
   margin-left: 0;
 }
 
-.info-project .btn {
-  padding: 1rem 1.4rem;
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background: transparent;
-  border-radius: 0.5rem;
-  margin-top: 0.3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.personal-info .btn {
-  padding: 1rem 1rem;
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background: transparent;
-  border-radius: 0.5rem;
-  margin-top: 0.3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.info-project .btn:hover {
-  background: #6070ff;
-  color: #fff;
-}
-
 /* About-me Section */
 
 .about-me {
@@ -244,10 +240,6 @@ a {
   margin-top: 6rem;
 }
 
-.personal-info .btn:hover {
-  background: #6070ff;
-  color: #fff;
-}
 
 .code-lang {
   display: flex;
@@ -338,6 +330,16 @@ form textarea {
   padding: 0.4rem;
 }
 
-.form button {
+.form .primary-button {
   display: block;
+  background: #fff;
+}
+.form .primary-button:hover {
+  color: #fff;
+  border-color:white;
+  background: transparent;
+}
+.form .primary-button:active {
+  border: none;
+  background: #2230d2;
 }
