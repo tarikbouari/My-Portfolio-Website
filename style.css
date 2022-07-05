@@ -330,6 +330,12 @@ form textarea {
   padding: 0.4rem;
 }
 
+.form input:focus,
+.form textarea:focus {
+  outline: 3px solid #cfd8dc;
+  outline-offset: 2px;
+}
+
 .form .primary-button {
   display: block;
   background: #fff;
