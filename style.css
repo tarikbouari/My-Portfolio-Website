@@ -221,7 +221,8 @@ a {
   padding: 1.8rem;
   background-color: #fff;
   border-radius: 0 6rem 0 0;
-  margin: 5rem 0;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .about-me h2 {
@@ -277,4 +278,25 @@ a {
   font-size: 1rem;
   line-height: 20px;
   margin-left: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.8rem;
+  border-radius: 5rem 0 0 0;
+  background-color: #6070ff;
+  background-image: url('images/contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
