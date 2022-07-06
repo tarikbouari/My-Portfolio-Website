@@ -51,6 +51,9 @@ a {
   height: 80vh;
   border-radius: 0 0 0 6rem;
   background-color: #fff;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1.name {
@@ -90,9 +93,6 @@ h1.name {
 }
 
 .presentation {
-  background-image: url('images/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -251,7 +251,7 @@ h1.name {
   padding: 1rem;
 }
 
-.code-lang ul {
+.code-lang .ul-lang {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -353,4 +353,125 @@ form textarea {
 .form .primary-button:active {
   border: none;
   background: #2230d2;
+}
+
+@media (min-width: 768px) {
+  .section-presentation {
+    margin-top: 3rem;
+    width: 100%;
+    height: 75vh;
+    border-radius: 0 0 0 6rem;
+    background-color: #fff;
+    background-image: url('images/header2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .presentation {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 5rem 1.8rem 1.8rem 1.8rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .projects .project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .projects img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.8rem;
+    background-color: #fff;
+    border-radius: 0 6rem 0 0;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-basis: 53%;
+    margin-top: 6rem;
+  }
+
+  .code-lang {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .lang-child {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .lang-child > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f7f7f9;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.8rem;
+    border-radius: 5rem 0 0 0;
+    background-color: #6070ff;
+    background-image: url('images/contact.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-form {
+    width: 75%;
+    margin: auto;
+  }
+
+
+  form > input {
+    height: 35px;
+    margin: 0.6rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+  }
+
+  form textarea {
+    resize: none;
+    margin: 0.4rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    padding: 0.4rem;
+  }
 }
