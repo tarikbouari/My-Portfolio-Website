@@ -45,6 +45,7 @@ a {
   background: #2230d2;
 }
 
+/* Section presentation ************** */
 .section-presentation {
   margin-top: 3rem;
   width: 100%;
@@ -144,7 +145,7 @@ h1.name {
   height: 20px;
 }
 
-/* Project Section */
+/* Project Section **************************/
 
 .projects {
   display: grid;
@@ -152,10 +153,6 @@ h1.name {
   grid-row-gap: 5rem;
   margin-top: 5rem;
   padding: 1rem;
-}
-
-.projects .project-card:first-child {
-  display: none;
 }
 
 .projects .project-card {
@@ -166,6 +163,10 @@ h1.name {
   border-radius: 16px;
   background-color: #fff;
   padding: 1rem;
+}
+
+.projects .project-card:first-child {
+  display: none;
 }
 
 .img-project {
@@ -220,7 +221,7 @@ h1.name {
   margin-left: 0;
 }
 
-/* About-me Section */
+/* About-me Section *********************************/
 
 .about-me {
   display: flex;
@@ -283,6 +284,7 @@ h1.name {
   margin-left: 0.5rem;
 }
 
+/**  Footer and contact-form ***************************/
 .contact {
   display: flex;
   flex-direction: column;
@@ -359,6 +361,7 @@ form textarea {
   background: #2230d2;
 }
 
+/* Desktop version media query ***************************/
 @media (min-width: 768px) {
   .section-presentation {
     margin-top: 3rem;
@@ -389,6 +392,11 @@ form textarea {
     border-radius: 16px;
     background-color: #fff;
     padding: 1rem;
+  }
+
+  .projects .project-card:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
   }
 
   .projects .project-card:first-child {
