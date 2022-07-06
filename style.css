@@ -449,16 +449,16 @@ form textarea {
     padding: 1.8rem;
     border-radius: 5rem 0 0 0;
     background-color: #6070ff;
-    background-image: url('images/contact.png');
-    background-size: contain;
+    background-image: url('images/contact1.png');
+    background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
   }
 
   .contact-form {
-    width: 75%;
+    width: 40%;
     margin: auto;
   }
-
 
   form > input {
     height: 35px;
@@ -473,5 +473,10 @@ form textarea {
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     padding: 0.4rem;
+  }
+
+  form .primary-button {
+    background: #fff;
+    margin: 0 auto;
   }
 }
