@@ -154,6 +154,10 @@ h1.name {
   padding: 1rem;
 }
 
+.projects .project-card:first-child {
+  display: none;
+}
+
 .projects .project-card {
   display: flex;
   flex-direction: column;
@@ -309,7 +313,7 @@ footer {
   color: white;
 }
 
-.form > input {
+.form .input {
   width: 100%;
   height: 35px;
   margin: 0.6rem auto;
@@ -366,6 +370,7 @@ form textarea {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .presentation {
     width: 80%;
     display: flex;
@@ -386,8 +391,17 @@ form textarea {
     padding: 1rem;
   }
 
+  .projects .project-card:first-child {
+    display: flex;
+  }
+
   .projects img {
     width: 100%;
+    height: auto;
+  }
+
+  .projects .project-card:first-child img {
+    width: 57%;
     height: auto;
   }
 
@@ -450,28 +464,29 @@ form textarea {
     border-radius: 5rem 0 0 0;
     background-color: #6070ff;
     background-image: url('images/contact1.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
   }
 
   .contact-form {
-    width: 40%;
-    margin: auto;
+    width: 48%;
+    margin: 1rem auto;
   }
 
-  form > input {
+  .form .input {
+    width: 100%;
     height: 35px;
     margin: 0.6rem auto;
     border: 1px solid #cfd8dc;
-    border-radius: 8px;
+    border-radius: 0;
   }
 
   form textarea {
     resize: none;
     margin: 0.4rem auto;
     border: 1px solid #cfd8dc;
-    border-radius: 8px;
+    border-radius: 0;
     padding: 0.4rem;
   }
 
