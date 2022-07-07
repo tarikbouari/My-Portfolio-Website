@@ -33,7 +33,7 @@ a {
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background 0.21s;
+  transition: background 0.5s;
 }
 
 .primary-button:hover {
@@ -101,6 +101,10 @@ h1.name {
   display: none;
 }
 
+.right ul li a {
+  color: #344563;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -117,8 +121,20 @@ h1.name {
   align-items: center;
 }
 
+.social-media li {
+  transition: transform 0.7s;
+}
+
+.about-me ul li {
+  list-style: none;
+}
+
 .presentation ul li {
   list-style: none;
+}
+
+.social-media li:hover {
+  transform: translateY(-0.5rem);
 }
 
 .name {
@@ -199,10 +215,6 @@ h1.name {
 .info-project ul {
   display: inline-flex;
   gap: 0.8rem;
-}
-
-.about-me ul li {
-  list-style: none;
 }
 
 .info-project .specific li {
@@ -356,6 +368,7 @@ form textarea {
 .form .primary-button {
   display: block;
   background: #fff;
+  transition: background 0.5s;
 }
 
 .form .primary-button:hover {
@@ -371,10 +384,26 @@ form textarea {
 
 /* Desktop version media query ***************************/
 @media (min-width: 768px) {
+  .left .logo {
+    transition: transform 1s ease;
+  }
+
+  .left .logo:hover {
+    font-size: 20px;
+  }
+
   .right ul {
     display: flex;
     list-style: none;
     gap: 1rem;
+  }
+
+  .right ul li a {
+    transition: color 0.8s;
+  }
+
+  .right ul li a:hover {
+    color: #6070ff;
   }
 
   .right svg {
@@ -393,7 +422,7 @@ form textarea {
   }
 
   .presentation {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -433,6 +462,11 @@ form textarea {
     width: 100%;
     height: auto;
     align-self: center;
+    transition: transform 1s;
+  }
+
+  .projects img:hover {
+    transform: scale(1.03);
   }
 
   .projects .project-card:first-child img {
@@ -452,7 +486,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 1.1rem;
   }
 
   .info-project .title {
@@ -547,6 +581,18 @@ form textarea {
     border: 1px solid #cfd8dc;
     border-radius: 0;
     padding: 0.4rem;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    transition: transform 0.35s, color 0.35s;
+    padding-left: 0.7rem;
+  }
+
+  form input:hover::placeholder,
+  form textarea:hover::placeholder {
+    transform: translateX(16px);
+    color: #6070ff;
   }
 
   form .primary-button {
