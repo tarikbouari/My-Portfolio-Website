@@ -152,6 +152,14 @@ h1.name {
   align-items: center;
 }
 
+.social-media li {
+  transition: transform 0.7s;
+}
+
+.social-media li:hover {
+  transform: translateY(-0.5rem);
+}
+
 .icon {
   width: 20px;
   height: 20px;
@@ -445,6 +453,11 @@ form textarea {
     width: 100%;
     height: auto;
     align-self: center;
+    transition: transform 1s;
+  }
+
+  .projects img:hover {
+    transform: scale(1.03);
   }
 
   .projects .project-card:first-child img {
