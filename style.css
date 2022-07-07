@@ -33,7 +33,7 @@ a {
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background 0.21s;
+  transition: background 0.5s;
 }
 
 .primary-button:hover {
@@ -368,6 +368,7 @@ form textarea {
 .form .primary-button {
   display: block;
   background: #fff;
+  transition: background 0.5s;
 }
 
 .form .primary-button:hover {
