@@ -490,7 +490,7 @@ form textarea {
   }
 
   .info-project .title {
-    width: 100%;
+    max-width: 100%;
   }
 
   .info-project ul {
