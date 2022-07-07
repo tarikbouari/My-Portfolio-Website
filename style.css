@@ -148,6 +148,14 @@ h1.name {
   align-items: center;
 }
 
+.social-media li {
+  transition: transform 0.7s;
+}
+
+.social-media li:hover {
+  transform: translateY(-0.5rem);
+}
+
 .icon {
   width: 20px;
   height: 20px;
