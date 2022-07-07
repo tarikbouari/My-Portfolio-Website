@@ -575,6 +575,17 @@ form textarea {
     padding: 0.4rem;
   }
 
+  form input::placeholder,
+  form textarea::placeholder {
+  transition: transform 0.35s, color 0.35s;
+}
+
+  form input:hover::placeholder,
+  form textarea:hover::placeholder {
+  transform: translateX(16px);
+  color: #6070ff;
+}
+
   form .primary-button {
     background: #fff;
     margin: 0 auto;
