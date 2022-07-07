@@ -433,6 +433,11 @@ form textarea {
     width: 100%;
     height: auto;
     align-self: center;
+    transition: transform 1s;
+  }
+
+  .projects img:hover {
+    transform: scale(1.03);
   }
 
   .projects .project-card:first-child img {
