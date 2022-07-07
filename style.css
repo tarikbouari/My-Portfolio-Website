@@ -45,12 +45,16 @@ a {
   background: #2230d2;
 }
 
+/* Section presentation ************** */
 .section-presentation {
   margin-top: 3rem;
   width: 100%;
   height: 80vh;
   border-radius: 0 0 0 6rem;
   background-color: #fff;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1.name {
@@ -60,7 +64,7 @@ h1.name {
 .nav-bar {
   width: 100%;
   height: 80px;
-  padding: 1.4rem 2rem 1rem;
+  padding: 1.4rem 3rem 1rem;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -89,10 +93,15 @@ h1.name {
   text-align: center;
 }
 
+.right {
+  display: flex;
+}
+
+.right ul {
+  display: none;
+}
+
 .presentation {
-  background-image: url('images/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -135,7 +144,7 @@ h1.name {
 .social-media {
   display: flex;
   width: 60%;
-  justify-content: space-between;
+  gap: 1.3rem;
   align-items: center;
 }
 
@@ -144,7 +153,7 @@ h1.name {
   height: 20px;
 }
 
-/* Project Section */
+/* Project Section **************************/
 
 .projects {
   display: grid;
@@ -155,13 +164,17 @@ h1.name {
 }
 
 .projects .project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5 rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
   padding: 1rem;
+}
+
+.projects .project-card:first-child {
+  display: none;
 }
 
 .img-project {
@@ -216,7 +229,7 @@ h1.name {
   margin-left: 0;
 }
 
-/* About-me Section */
+/* About-me Section *********************************/
 
 .about-me {
   display: flex;
@@ -251,7 +264,7 @@ h1.name {
   padding: 1rem;
 }
 
-.code-lang ul {
+.code-lang .ul-lang {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -274,11 +287,12 @@ h1.name {
 
 .lang-child > li h4 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.65rem;
   line-height: 20px;
   margin-left: 0.5rem;
 }
 
+/**  Footer and contact-form ***************************/
 .contact {
   display: flex;
   flex-direction: column;
@@ -309,7 +323,7 @@ footer {
   color: white;
 }
 
-.form > input {
+.form .input {
   width: 100%;
   height: 35px;
   margin: 0.6rem auto;
@@ -353,4 +367,190 @@ form textarea {
 .form .primary-button:active {
   border: none;
   background: #2230d2;
+}
+
+/* Desktop version media query ***************************/
+@media (min-width: 768px) {
+  .right ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .right svg {
+    display: none;
+  }
+
+  .section-presentation {
+    margin-top: 3rem;
+    width: 100%;
+    height: 75vh;
+    border-radius: 0 0 0 6rem;
+    background-color: #fff;
+    background-image: url('images/header2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .presentation {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 5rem 1.8rem 1.8rem 1.8rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    margin-top: 5rem;
+    padding: 5rem;
+  }
+
+  .projects .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .projects .project-card:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+  }
+
+  .projects .project-card:first-child {
+    display: flex;
+  }
+
+  .projects img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .projects .project-card:first-child img {
+    max-width: 47%;
+    height: auto;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #344563;
+  }
+
+  .info-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .info-project .title {
+    width: 100%;
+  }
+
+  .info-project ul {
+    display: inline-flex;
+    gap: 0.6rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem;
+    background-color: #fff;
+    border-radius: 0 6rem 0 0;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-basis: 53%;
+    margin-top: 6rem;
+  }
+
+  .code-lang {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .code-lang .ul-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+  }
+
+  .lang-child {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .lang-child > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f7f7f9;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.8rem;
+    border-radius: 5rem 0 0 0;
+    background-color: #6070ff;
+    background-image: url('images/contact1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 48%;
+    margin: 1rem auto;
+  }
+
+  .form .input {
+    width: 100%;
+    height: 35px;
+    margin: 0.6rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 0;
+  }
+
+  form textarea {
+    resize: none;
+    margin: 0.4rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 0;
+    padding: 0.4rem;
+  }
+
+  form .primary-button {
+    background: #fff;
+    margin: 0 auto;
+  }
 }

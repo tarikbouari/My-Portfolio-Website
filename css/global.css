@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('banner.css');
+@import url('main.css');
+@import url('desktop.css');
+@import url('footer.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-button {
+  padding: 1rem 1.4rem;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background: transparent;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background 0.21s;
+}
+
+.primary-button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.primary-button:active {
+  background: #2230d2;
+}
