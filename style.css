@@ -121,8 +121,20 @@ h1.name {
   align-items: center;
 }
 
+.social-media li {
+  transition: transform 0.7s;
+}
+
+.about-me ul li {
+  list-style: none;
+}
+
 .presentation ul li {
   list-style: none;
+}
+
+.social-media li:hover {
+  transform: translateY(-0.5rem);
 }
 
 .name {
@@ -150,14 +162,6 @@ h1.name {
   width: 60%;
   gap: 1.3rem;
   align-items: center;
-}
-
-.social-media li {
-  transition: transform 0.7s;
-}
-
-.social-media li:hover {
-  transform: translateY(-0.5rem);
 }
 
 .icon {
@@ -211,10 +215,6 @@ h1.name {
 .info-project ul {
   display: inline-flex;
   gap: 0.8rem;
-}
-
-.about-me ul li {
-  list-style: none;
 }
 
 .info-project .specific li {
@@ -384,6 +384,14 @@ form textarea {
 
 /* Desktop version media query ***************************/
 @media (min-width: 768px) {
+  .left .logo {
+    transition: transform 1s ease;
+  }
+
+  .left .logo:hover {
+    font-size: 20px;
+  }
+
   .right ul {
     display: flex;
     list-style: none;
@@ -414,7 +422,7 @@ form textarea {
   }
 
   .presentation {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -577,14 +585,15 @@ form textarea {
 
   form input::placeholder,
   form textarea::placeholder {
-  transition: transform 0.35s, color 0.35s;
-}
+    transition: transform 0.35s, color 0.35s;
+    padding-left: 0.7rem;
+  }
 
   form input:hover::placeholder,
   form textarea:hover::placeholder {
-  transform: translateX(16px);
-  color: #6070ff;
-}
+    transform: translateX(16px);
+    color: #6070ff;
+  }
 
   form .primary-button {
     background: #fff;
