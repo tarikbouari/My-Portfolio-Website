@@ -515,10 +515,6 @@ form textarea {
     align-items: center;
   }
 
-  .js h4 {
-    font-size: 0.5rem;
-  }
-
   .contact {
     display: flex;
     flex-direction: column;
