@@ -64,7 +64,7 @@ h1.name {
 .nav-bar {
   width: 100%;
   height: 80px;
-  padding: 1.4rem 2rem 1rem;
+  padding: 1.4rem 3rem 1rem;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -91,6 +91,14 @@ h1.name {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+}
+
+.right {
+  display: flex;
+}
+
+.right ul {
+  display: none;
 }
 
 .presentation {
@@ -136,7 +144,7 @@ h1.name {
 .social-media {
   display: flex;
   width: 60%;
-  justify-content: space-between;
+  gap: 1.3rem;
   align-items: center;
 }
 
@@ -156,9 +164,9 @@ h1.name {
 }
 
 .projects .project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5 rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
@@ -279,7 +287,7 @@ h1.name {
 
 .lang-child > li h4 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.65rem;
   line-height: 20px;
   margin-left: 0.5rem;
 }
@@ -363,6 +371,16 @@ form textarea {
 
 /* Desktop version media query ***************************/
 @media (min-width: 768px) {
+  .right ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .right svg {
+    display: none;
+  }
+
   .section-presentation {
     margin-top: 3rem;
     width: 100%;
@@ -384,10 +402,18 @@ form textarea {
     margin: 0 auto;
   }
 
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    margin-top: 5rem;
+    padding: 5rem;
+  }
+
   .projects .project-card {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background-color: #fff;
@@ -406,11 +432,20 @@ form textarea {
   .projects img {
     width: 100%;
     height: auto;
+    align-self: center;
   }
 
   .projects .project-card:first-child img {
-    width: 57%;
+    max-width: 47%;
     height: auto;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #344563;
   }
 
   .info-project {
@@ -420,12 +455,21 @@ form textarea {
     padding-top: 1rem;
   }
 
+  .info-project .title {
+    width: 100%;
+  }
+
+  .info-project ul {
+    display: inline-flex;
+    gap: 0.6rem;
+  }
+
   .about-me {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    padding: 1.8rem;
+    padding: 5rem;
     background-color: #fff;
     border-radius: 0 6rem 0 0;
     margin-top: 5rem;
@@ -448,6 +492,13 @@ form textarea {
     padding: 1rem;
   }
 
+  .code-lang .ul-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+  }
+
   .lang-child {
     display: flex;
     flex-direction: row;
@@ -462,6 +513,10 @@ form textarea {
     background-color: #f7f7f9;
     padding: 1rem;
     align-items: center;
+  }
+
+  .js h4 {
+    font-size: 0.5rem;
   }
 
   .contact {
