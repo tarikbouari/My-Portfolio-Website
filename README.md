@@ -40,6 +40,10 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
+## RESPONSIBLE VERSION 
+
+
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed..
