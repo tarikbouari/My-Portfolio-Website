@@ -557,7 +557,7 @@ form textarea {
     border-radius: 5rem 0 0 0;
     background-color: #6070ff;
     background-image: url('images/contact1.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
   }
