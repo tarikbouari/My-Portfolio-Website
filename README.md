@@ -13,7 +13,9 @@ This is my  portfolio project that showcases my best work, personality and talen
 - following github flows standards.
 
 ## Live Demo
-[click here](tarikbouari.github.io/My-Portfolio-Website)
+
+[click here](https://tarikbouari.github.io/My-Portfolio-Website/)
+
 ## Authors
 
 👤 **Tarik Bouari**
