@@ -12,8 +12,8 @@ This is my  portfolio project that showcases my best work, personality and talen
 - following linters standards.
 - following github flows standards.
 
-
-
+## Live Demo
+[click here](tarikbouari.github.io/My-Portfolio-Website)
 ## Authors
 
 👤 **Tarik Bouari**
@@ -39,6 +39,9 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+## Responsible version
+ ![mobile](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/image1%20(3).jpeg)
+![desktop](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/mokup%20responsible.PNG)
 
 ## RESPONSIBLE VERSION 
 
