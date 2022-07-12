@@ -3,7 +3,8 @@
 
 # Description of the project.
 
-This is my  portfolio project that showcases my best work, personality and talents.  
+This project is a personal portfolio responsible site that was assigned to me by Microverse.
+A figma prototype template was provided. 
 
 
 ## Built With
@@ -11,6 +12,9 @@ This is my  portfolio project that showcases my best work, personality and talen
 - HTML AND CSS
 - following linters standards.
 - following github flows standards.
+
+## Live demo 
+[click here](https://tarikbouari.github.io/My-Portfolio-Website/)
 
 ## Authors
 
