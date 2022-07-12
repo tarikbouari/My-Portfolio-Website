@@ -33,11 +33,11 @@ a {
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background 0.5s;
+  transition: background-color 0.5s;
 }
 
 .primary-button:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
@@ -252,6 +252,7 @@ h1.name {
   border-radius: 0 6rem 0 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
+  color: #344563;
 }
 
 .about-me h2 {
@@ -260,6 +261,7 @@ h1.name {
   font-size: 40px;
   line-height: 3rem;
   max-width: 77%;
+  color: #091e42;
 }
 
 .personal-info {
@@ -400,6 +402,25 @@ form textarea {
 
   .right ul li a {
     transition: color 0.8s;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .right ul li a::after {
+    content: '';
+    background-color: #6070ff;
+    width: 100%;
+    height: 0.15rem;
+    transform: scaleX(0);
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    transition: transform 1s;
+  }
+
+  .right ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
   }
 
   .right ul li a:hover {
@@ -413,7 +434,7 @@ form textarea {
   .section-presentation {
     margin-top: 3rem;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     border-radius: 0 0 0 6rem;
     background-color: #fff;
     background-image: url('images/header2.png');
@@ -426,7 +447,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    padding: 5rem 1.8rem 1.8rem 1.8rem;
+    padding: 9rem 1.8rem 1.8rem 1.8rem;
     justify-content: center;
     margin: 0 auto;
   }
@@ -477,7 +498,6 @@ form textarea {
   .project-card p,
   .project-card li {
     font-weight: 400;
-    font-size: 1.25rem;
     line-height: 1.75rem;
     color: #344563;
   }
@@ -496,6 +516,7 @@ form textarea {
   .info-project ul {
     display: inline-flex;
     gap: 0.6rem;
+    white-space: nowrap;
   }
 
   .about-me {
@@ -549,6 +570,18 @@ form textarea {
     align-items: center;
   }
 
+  .lang-child .js,
+  .lang-child .html,
+  .lang-child .css {
+    transition: transform 1s;
+  }
+
+  .lang-child .js:hover,
+  .lang-child .html:hover,
+  .lang-child .css:hover {
+    transform: scale(1);
+  }
+
   .contact {
     display: flex;
     flex-direction: column;
@@ -557,7 +590,7 @@ form textarea {
     border-radius: 5rem 0 0 0;
     background-color: #6070ff;
     background-image: url('images/contact1.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
   }
