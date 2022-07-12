@@ -5,8 +5,8 @@
 
 ## Description 
 
-This project is a personal portfolio responsible site that was assigned to me by Microverse.
-A figma prototype template was provided. 
+This project is my portfolio responsible site that contains all my projects as a software developer. it highlights my values and background.  
+it was assigned to me by Microverse. A figma prototype template was provided. 
 
 
 ## Built With
