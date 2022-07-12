@@ -12,6 +12,8 @@ This is my  portfolio project that showcases my best work, personality and talen
 - following linters standards.
 - following github flows standards.
 
+## Live demo
+[click here](https://tarikbouari.github.io/My-Portfolio-Website/)
 
 ## Authors
 
