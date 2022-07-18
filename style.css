@@ -415,6 +415,7 @@ form textarea {
 
   .left .logo:hover {
     font-size: 20px;
+  
   }
 
   .right ul {
@@ -423,6 +424,7 @@ form textarea {
     gap: 1rem;
     padding-top: 0rem;
     height: 0;
+
   }
 
   .right ul li a {
@@ -446,6 +448,7 @@ form textarea {
     transition: transform 0.5s;
   }
 
+
   .right ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
@@ -454,6 +457,9 @@ form textarea {
   .right ul li a:hover {
     color: #6070ff;
   }
+.nav-link{
+  display: inline-block !important;
+}
 
   .right svg {
     display: none;

@@ -42,9 +42,16 @@ function closeAll() {
   navbar.style.height = "80px";
   navbar.style.transition = "3ms all ease";
   navbar.style.background = "#fff";
-  menuIcon.style.display = "Block";
+  menuIcon.style.display = "block";
   navLink.style.display = "none";
   closeMenu.style.display = "none";
   logo.style.display = "block";
   logoBar.style.display = "flex";
 }
+
+    var body= document.querySelector('body');
+    if(body.style.width > '768px'){
+        menuIcon.style.display = "none";
+    }else{
+        menuIcon.style.display='block';
+    }
