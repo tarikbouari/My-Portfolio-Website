@@ -98,15 +98,34 @@ h1.name {
 }
 
 .right {
-  display: flex;
+  display: block;
 }
 
 .right ul {
   display: none;
+  padding-top: 2rem;
+  height: 40vh;
+}
+
+.right ul li {
+  padding-top: 2rem;
 }
 
 .right ul li a {
-  color: #344563;
+  color: #fff;
+}
+
+.right ul li a{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.close {
+  display: none;
+  float: right;
+  position: relative;
+  top: 2rem;
 }
 
 .presentation {
@@ -402,12 +421,17 @@ form textarea {
     display: flex;
     list-style: none;
     gap: 1rem;
+    padding-top: 0rem;
+    height: 0;
   }
 
   .right ul li a {
     transition: color 0.8s;
     font-weight: 500;
     position: relative;
+    color: #344563;
+    font-size: 15px;
+    line-height: 0px;
   }
 
   .right ul li a::after {
