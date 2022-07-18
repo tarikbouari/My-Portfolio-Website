@@ -28,6 +28,11 @@ let navbox = document.querySelector('.right');
 })
 
 closeMenu.addEventListener('click', () =>{
+   closeAll();
+
+})
+
+function closeAll(){
    
     navbar.style.height='80px';
     navbar.style.transition ='3ms all ease';
@@ -38,5 +43,4 @@ closeMenu.addEventListener('click', () =>{
     logo.style.display='block';
     logoBar.style.display='flex';
     
-
-})
+}
