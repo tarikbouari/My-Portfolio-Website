@@ -415,7 +415,7 @@ form textarea {
     position: absolute;
     left: 0;
     top: 1.5rem;
-    transition: transform 1s;
+    transition: transform 0.5s;
   }
 
   .right ul li a:hover::after {
