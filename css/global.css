@@ -15,6 +15,10 @@ body {
   background-color: #e5e5e5;
 }
 
+ul {
+  list-style: none;
+}
+
 p {
   font-style: normal;
   font-weight: 400;
@@ -37,11 +41,11 @@ a {
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background 0.21s;
+  transition: background-color 0.5s;
 }
 
 .primary-button:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 

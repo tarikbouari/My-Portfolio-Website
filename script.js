@@ -3,7 +3,7 @@ let navbar = document.querySelector("#nav-bar");
 let mainPage = document.querySelector("main");
 let footerSection = document.querySelector("footer");
 let logo = document.querySelector(".logo");
-let menuIcon = document.getElementById("hamburger");
+let menuIcon = document.querySelector(".menu-icon");
 let logoBar = document.querySelector(".logo-bar");
 let closeMenu = document.querySelector(".close");
 let navbox = document.querySelector(".right");
@@ -20,21 +20,20 @@ menuIcon.addEventListener("click", () => {
   navLink.style.justifyContent = "flex-start";
   navLink.style.alignItems = "space-around";
   logo.style.display = "none";
-
-  // mainPage.style.display='none';
   menuIcon.style.display = "none";
   logoBar.style.display = "block";
-  // footerSection.style.display='none';
   closeMenu.style.display = "block";
 });
 
 closeMenu.addEventListener("click", () => {
   closeAll();
+  location.reload();
 });
 
 navItem.forEach((item) => {
   item.addEventListener("click", (event) => {
     closeAll();
+    location.reload();
   });
 });
 
@@ -49,9 +48,3 @@ function closeAll() {
   logoBar.style.display = "flex";
 }
 
-    var body= document.querySelector('body');
-    if(body.style.width > '768px'){
-        menuIcon.style.display = "none";
-    }else{
-        menuIcon.style.display='block';
-    }

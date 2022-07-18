@@ -115,7 +115,11 @@ h1.name {
   color: #fff;
 }
 
-.right ul li a{
+.menu-icon {
+  display: block;
+}
+
+.right ul li a {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -415,16 +419,18 @@ form textarea {
 
   .left .logo:hover {
     font-size: 20px;
-  
   }
 
   .right ul {
     display: flex;
     list-style: none;
     gap: 1rem;
-    padding-top: 0rem;
+    padding-top: 0;
     height: 0;
+  }
 
+  .right ul li {
+    padding: 0;
   }
 
   .right ul li a {
@@ -448,7 +454,6 @@ form textarea {
     transition: transform 0.5s;
   }
 
-
   .right ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
@@ -457,11 +462,8 @@ form textarea {
   .right ul li a:hover {
     color: #6070ff;
   }
-.nav-link{
-  display: inline-block !important;
-}
 
-  .right svg {
+  .menu-icon {
     display: none;
   }
 
@@ -491,7 +493,7 @@ form textarea {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
     margin-top: 5rem;
-    padding: 5rem;
+    padding: 7rem 12rem;
   }
 
   .projects .project-card {
@@ -518,6 +520,7 @@ form textarea {
     height: auto;
     align-self: center;
     transition: transform 1s;
+    padding-top: 3rem;
   }
 
   .projects img:hover {
@@ -540,7 +543,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-top: 1.1rem;
+    padding-top: 2.1rem;
   }
 
   .info-project .title {
