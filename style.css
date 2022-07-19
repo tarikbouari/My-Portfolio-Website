@@ -107,12 +107,20 @@ h1.name {
   height: 40vh;
 }
 
-.right ul li {
-  padding-top: 2rem;
+.lang-child > li {
+  display: flex;
+  gap: 0.3rem;
+  background-color: #f7f7f9;
+  padding: 1rem;
+  align-items: center;
 }
 
-.right ul li a {
-  color: #fff;
+.social-media li {
+  transition: transform 0.7s;
+}
+
+.right ul li {
+  padding-top: 2rem;
 }
 
 .menu-icon {
@@ -123,6 +131,7 @@ h1.name {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
+  color: #fff;
 }
 
 .close {
@@ -138,18 +147,6 @@ h1.name {
   gap: 0.8rem;
   padding: 1.8rem;
   justify-content: center;
-}
-
-.lang-child > li {
-  display: flex;
-  gap: 0.3rem;
-  background-color: #f7f7f9;
-  padding: 1rem;
-  align-items: center;
-}
-
-.social-media li {
-  transition: transform 0.7s;
 }
 
 .about-me ul li {
@@ -429,6 +426,22 @@ form textarea {
     height: 0;
   }
 
+  .lang-child > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f7f7f9;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #344563;
+  }
+
   .right ul li {
     padding: 0;
   }
@@ -532,13 +545,6 @@ form textarea {
     height: auto;
   }
 
-  .project-card p,
-  .project-card li {
-    font-weight: 400;
-    line-height: 1.75rem;
-    color: #344563;
-  }
-
   .info-project {
     display: flex;
     flex-direction: column;
@@ -596,15 +602,6 @@ form textarea {
     flex-direction: row;
     gap: 0.5rem;
     margin-top: 1rem;
-  }
-
-  .lang-child > li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    background-color: #f7f7f9;
-    padding: 1rem;
-    align-items: center;
   }
 
   .lang-child .js,
