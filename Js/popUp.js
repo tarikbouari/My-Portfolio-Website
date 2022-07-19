@@ -3,50 +3,50 @@ let project = [
   {
     id: 'project1',
     title: 'Tonic',
-    img: '/images/',
+    img: 'images/Snapshoot.jpg',
     subtitle: ['Canopy','Backend','2015'],
     technologies: ['javascript', 'Css', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'sudja Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
     source: 'https://github.com/tarikbouari/My-Portfolio-Website'
   },
   {
     id: 'project2',
     title: 'Tonic',
-    img: '/images/',
+    img: 'images/tonic.png',
     subtitle: ['Canopy','Backend','2015'],
     technologies: ['javascript', 'Css', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Meshu Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
     source: 'https://github.com/tarikbouari/My-Portfolio-Website'
   },
   {
     id: 'project3',
     title: 'Tonic',
-    img: '/images/',
+    img: 'images/multi.png',
     subtitle: ['Canopy','Backend','2015'],
     technologies: ['javascript', 'Css', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'tarik Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
     source: 'https://github.com/tarikbouari/My-Portfolio-Website'
   },
   {
     id: 'project4',
     title: 'Multi-Post stories',
-    img: '/images/',
+    img: 'images/gray.png',
     subtitle: ['Canopy','Backend','2015'],
     technologies: ['javascript', 'Css', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'hello Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
     source: 'https://github.com/tarikbouari/My-Portfolio-Website'
   },
   {
     id: 'project5',
     title: 'Multi-Post stories',
-    img: '/images/',
+    img: 'images/dance.png',
     subtitle: ['Canopy','Backend','2015'],
     technologies: ['javascript', 'Css', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'hi Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
     source: 'https://github.com/tarikbouari/My-Portfolio-Website'
   }
@@ -55,6 +55,7 @@ let project = [
 const proContainer = document.getElementById('pro-container');
 const boxContainer = document.createElement('div');
 boxContainer.className = 'note';
+const closeBtn = document.getElementById('closebtn');
 
 
 
@@ -64,33 +65,55 @@ const btnProject = document.querySelectorAll('.primary-button');
 btnProject.forEach( (btn) => {
   btn.addEventListener('click', (e) =>{
     // e.preventDefault();
-  let btnId = e.target.dataset.id;
-  // console.log(btnId);
-  // console.log(project[btnId]);
-  projectLoad(project[btnId]);
-    
-  })
+  let btnData = e.target.dataset.id;
+  console.log(btnData);
+
+  // let selecProject = project.filter((item) => {
+  //   if(item.id === btnData){
+  //     return item;
+  //   }
+
+  // });
+  // console.log(selecProject);
+  
+  //  projectLoad(selecProject);
+
+  // })
+  projectLoad(project[btnData]);
 }) 
+})
 
-function projectLoad(item){
-  console.log("Title"+item.title);
-  console.log(item.subtitle[0]);
+function projectLoad(item) {
 
-    boxContainer.innerHtml = `<h2 class="title">${item.title}</h2>
-    <ul class="specific">
-        <li>${item.subtitle[0]}</li>
-        <li>${item.subtitle[1]}</li>
-        <li>${item.subtitle[2]}</li>
-    </ul>
-    <p>${item.description}</p>
-    <ul class="language">
-    <li>${item.technologies[0]}</li>
-    <li>${item.technologies[1]}</li>
-    <li>${item.technologies[2]}</li>
-    </ul>
-    <a href="${item.liveDemo}">Live<a>
-    <a href="${item.source}">Source<a>
-   `  ;
-   proContainer.appendChild(boxContainer);
+  box = `<h2 class='title'>${item.title}</h2>
+  <ul class="specific">
+  <li>${item.subtitle[0]}</li>
+  <li>${item.subtitle[1]}</li>
+  <li>${item.subtitle[2]}</li>
+  </ul>
+  <img src='${item.img}'>
+  <p>${item.description}</p>
+  <ul class="language">
+  <li>${item.technologies[0]}</li>
+  <li>${item.technologies[1]}</li>
+  <li>${item.technologies[2]}</li>
+  </ul>
+  <div>
+  <a href="${item.liveDemo}">Live<a>
+  <a href="${item.source}">Source<a>
+  <div>
+   `;
+  proContainer.innerHTML = box;
+  proContainer.classList.add('popbox');
+  // closeBtn.classList.add('closebtn');
+  closeBtn.style.display = 'block'
+  proContainer.style.display ='flex';
 }
 
+closeBtn.addEventListener('click', () =>{  
+  proContainer.classList.remove('popbox')
+  // closeBtn.classList.remove('closebtn');
+  proContainer.style.display ='none';
+  closeBtn.style.display = 'none';
+
+})

@@ -33,6 +33,42 @@
   gap: 1.5rem;
 }
 
+/***** pop window css */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 3rem;
+  max-width: 77%;
+  color: #172b4d;
+}
+
+.specific li {
+  margin-left: 1rem;
+  color: #7a869a;
+  font-weight: 600;
+}
+
+.specific {
+  display: inline-flex;
+  gap: 0.8rem;
+}
+
+.language {
+  display: inline-flex;
+  gap: 0.8rem;
+}
+
+.language li {
+  background: #ebebff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.7rem;
+  color: #6070ff;
+  list-style: none;
+}
+
+/* end ******* */
+
 .info-project .title {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -69,6 +105,19 @@
 
 .info-project .language li:first-child {
   margin-left: 0;
+}
+
+.popclass {
+  display: grid;
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 /* About-me Section *********************************/

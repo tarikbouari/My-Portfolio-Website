@@ -52,3 +52,26 @@ a {
 .primary-button:active {
   background: #2230d2;
 }
+
+.popbox {
+  display: flex;
+  position: absolute;
+  z-index: 7;
+  top: 60px;
+  padding: 1rem;
+  margin: 0 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.closebtn {
+  left: 19rem;
+  position: absolute;
+  z-index: 7;
+  top: 85px;
+  display: none;
+}
