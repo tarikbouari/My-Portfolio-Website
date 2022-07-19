@@ -56,7 +56,10 @@ const proContainer = document.getElementById('pro-container');
 const boxContainer = document.createElement('div');
 boxContainer.className = 'note';
 const closeBtn = document.getElementById('closebtn');
+const mainPage = document.querySelector('main');
+const footerSection = document.querySelector('footer'); 
 
+console.log(mainPage);
 
 
 
@@ -67,18 +70,6 @@ btnProject.forEach( (btn) => {
     // e.preventDefault();
   let btnData = e.target.dataset.id;
   console.log(btnData);
-
-  // let selecProject = project.filter((item) => {
-  //   if(item.id === btnData){
-  //     return item;
-  //   }
-
-  // });
-  // console.log(selecProject);
-  
-  //  projectLoad(selecProject);
-
-  // })
   projectLoad(project[btnData]);
 }) 
 })
@@ -98,9 +89,9 @@ function projectLoad(item) {
   <li>${item.technologies[1]}</li>
   <li>${item.technologies[2]}</li>
   </ul>
-  <div>
-  <a href="${item.liveDemo}">Live<a>
-  <a href="${item.source}">Source<a>
+  <div class="links">
+  <a href="${item.liveDemo}">See live</a>
+  <a href="${item.source}"> See Source</a>
   <div>
    `;
   proContainer.innerHTML = box;
@@ -108,6 +99,8 @@ function projectLoad(item) {
   // closeBtn.classList.add('closebtn');
   closeBtn.style.display = 'block'
   proContainer.style.display ='flex';
+  // mainPage.style.display="none";
+  // footerSection.style.display="none";
 }
 
 closeBtn.addEventListener('click', () =>{  
@@ -115,5 +108,7 @@ closeBtn.addEventListener('click', () =>{
   // closeBtn.classList.remove('closebtn');
   proContainer.style.display ='none';
   closeBtn.style.display = 'none';
+  // mainPage.style.display="block";
+  // footerSection.style.display="block";
 
 })

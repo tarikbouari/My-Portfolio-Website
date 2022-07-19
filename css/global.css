@@ -75,3 +75,23 @@ a {
   top: 85px;
   display: none;
 }
+
+.links {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: space-around;
+}
+
+.links a {
+  padding: 0.6rem 1.5rem;
+  color: #6070ff;
+  border-radius: 10px;
+  border: 1px solid #396df2;
+}
+
+.links a:first-child {
+  padding: 0.6rem 2rem;
+  color: #6070ff;
+  border-radius: 10px;
+  border: 1px solid #396df2;
+}
