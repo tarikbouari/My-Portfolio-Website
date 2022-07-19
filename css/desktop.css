@@ -154,6 +154,13 @@
     white-space: nowrap;
   }
 
+  .pro-container {
+    height: 90px;
+    background-color: #a7aeff;
+    display: flex;
+    flex-direction: column;
+  }
+
   .about-me {
     display: flex;
     flex-direction: row;

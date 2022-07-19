@@ -10,7 +10,7 @@ menuIcon.addEventListener('click', () => {
   navbar.style.position = 'fixed';
   navbar.style.height = '100vh';
   navbar.style.zIndex = '5';
-  navbar.style.background = '#6070FF';
+  navbar.style.background = 'rgba(46,59,153,0.8)';
   navLink.style.display = 'flex';
   navLink.style.top = 0;
   navLink.style.flexDirection = 'column';
@@ -30,7 +30,7 @@ function closeAll() {
   navLink.style.display = 'none';
   closeMenu.style.display = 'none';
   logo.style.display = 'block';
-  logoBar.style.display = 'flex';
+  logoBar.sgityle.display = 'flex';
 }
   
 closeMenu.addEventListener('click', () => {
