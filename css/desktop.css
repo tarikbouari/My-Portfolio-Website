@@ -1,0 +1,261 @@
+
+/* Desktop version media query ***************************/
+@media (min-width: 768px) {
+  .left .logo {
+    transition: transform 1s ease;
+  }
+
+  .left .logo:hover {
+    font-size: 20px;
+  }
+
+  .right ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding-top: 0;
+    height: 0;
+  }
+
+  .lang-child > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f7f7f9;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #344563;
+  }
+
+  .right ul li {
+    padding: 0;
+  }
+
+  .right ul li a {
+    transition: color 0.8s;
+    font-weight: 500;
+    position: relative;
+    color: #344563;
+    font-size: 15px;
+    line-height: 0px;
+  }
+
+  .right ul li a::after {
+    content: '';
+    background-color: #6070ff;
+    width: 100%;
+    height: 0.15rem;
+    transform: scaleX(0);
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    transition: transform 0.5s;
+  }
+
+  .right ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+
+  .right ul li a:hover {
+    color: #6070ff;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .section-presentation {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 0 6rem;
+    background-color: #fff;
+    background-image: url('/images/header2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .presentation {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 9rem 1.8rem 1.8rem 1.8rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    margin-top: 5rem;
+    padding: 7rem 11rem;
+  }
+
+  .projects .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .projects .project-card:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+  }
+
+  .projects .project-card:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    transition: transform 1s;
+    padding-top: 3rem;
+  }
+
+  .projects img:hover {
+    transform: scale(1.03);
+  }
+
+  .projects .project-card:first-child img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2.1rem;
+  }
+
+  .info-project .title {
+    max-width: 100%;
+  }
+
+  .info-project ul {
+    display: inline-flex;
+    gap: 0.6rem;
+    white-space: nowrap;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem;
+    background-color: #fff;
+    border-radius: 0 6rem 0 0;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-basis: 53%;
+    margin-top: 6rem;
+  }
+
+  .code-lang {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .code-lang .ul-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+  }
+
+  .lang-child {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .lang-child .js,
+  .lang-child .html,
+  .lang-child .css {
+    transition: transform 1s;
+  }
+
+  .lang-child .js:hover,
+  .lang-child .html:hover,
+  .lang-child .css:hover {
+    transform: scale(1);
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.8rem;
+    border-radius: 5rem 0 0 0;
+    background-color: #6070ff;
+    background-image: url('images/contact1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 48%;
+    margin: 1rem auto;
+  }
+
+  .form .input {
+    width: 100%;
+    height: 35px;
+    margin: 0.6rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 0;
+  }
+
+  form textarea {
+    resize: none;
+    margin: 0.4rem auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 0;
+    padding: 0.4rem;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    transition: transform 0.35s, color 0.35s;
+    padding-left: 0.7rem;
+  }
+
+  form input:hover::placeholder,
+  form textarea:hover::placeholder {
+    transform: translateX(16px);
+    color: #6070ff;
+  }
+
+  form .primary-button {
+    background: #fff;
+    margin: 0 auto;
+  }
+}

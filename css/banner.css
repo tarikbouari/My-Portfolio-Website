@@ -1,3 +1,4 @@
+
 /* Section presentation ************** */
 .section-presentation {
   margin-top: 3rem;
@@ -17,7 +18,7 @@ h1.name {
 .nav-bar {
   width: 100%;
   height: 80px;
-  padding: 1.4rem 2rem 1rem;
+  padding: 1.4rem 3rem 1rem;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -46,12 +47,18 @@ h1.name {
   text-align: center;
 }
 
-.presentation {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.8rem;
-  justify-content: center;
+.right {
+  display: block;
+}
+
+.right ul {
+  display: none;
+  padding-top: 2rem;
+  height: 40vh;
+}
+
+.social-media li {
+  transition: transform 0.7s;
 }
 
 .lang-child > li {
@@ -62,8 +69,46 @@ h1.name {
   align-items: center;
 }
 
+.right ul li {
+  padding-top: 2rem;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.right ul li a {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.close {
+  display: none;
+  float: right;
+  position: relative;
+  top: 2rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.8rem;
+  justify-content: center;
+}
+
+.about-me ul li {
+  list-style: none;
+}
+
 .presentation ul li {
   list-style: none;
+}
+
+.social-media li:hover {
+  transform: translateY(-0.5rem);
 }
 
 .name {
@@ -89,7 +134,7 @@ h1.name {
 .social-media {
   display: flex;
   width: 60%;
-  justify-content: space-between;
+  gap: 1.3rem;
   align-items: center;
 }
 

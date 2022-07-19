@@ -11,6 +11,10 @@ body {
   background-color: #e5e5e5;
 }
 
+ul {
+  list-style: none;
+}
+
 p {
   font-style: normal;
   font-weight: 400;
@@ -94,23 +98,13 @@ h1.name {
 }
 
 .right {
-  display: flex;
+  display: block;
 }
 
 .right ul {
   display: none;
-}
-
-.right ul li a {
-  color: #344563;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.8rem;
-  justify-content: center;
+  padding-top: 2rem;
+  height: 40vh;
 }
 
 .lang-child > li {
@@ -123,6 +117,36 @@ h1.name {
 
 .social-media li {
   transition: transform 0.7s;
+}
+
+.right ul li {
+  padding-top: 2rem;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.right ul li a {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.close {
+  display: none;
+  float: right;
+  position: relative;
+  top: 2rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.8rem;
+  justify-content: center;
 }
 
 .about-me ul li {
@@ -398,12 +422,37 @@ form textarea {
     display: flex;
     list-style: none;
     gap: 1rem;
+    padding-top: 0;
+    height: 0;
+  }
+
+  .lang-child > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f7f7f9;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #344563;
+  }
+
+  .right ul li {
+    padding: 0;
   }
 
   .right ul li a {
     transition: color 0.8s;
     font-weight: 500;
     position: relative;
+    color: #344563;
+    font-size: 15px;
+    line-height: 0px;
   }
 
   .right ul li a::after {
@@ -415,7 +464,7 @@ form textarea {
     position: absolute;
     left: 0;
     top: 1.5rem;
-    transition: transform 1s;
+    transition: transform 0.5s;
   }
 
   .right ul li a:hover::after {
@@ -427,7 +476,7 @@ form textarea {
     color: #6070ff;
   }
 
-  .right svg {
+  .menu-icon {
     display: none;
   }
 
@@ -457,7 +506,7 @@ form textarea {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
     margin-top: 5rem;
-    padding: 5rem;
+    padding: 7rem 12rem;
   }
 
   .projects .project-card {
@@ -484,6 +533,7 @@ form textarea {
     height: auto;
     align-self: center;
     transition: transform 1s;
+    padding-top: 3rem;
   }
 
   .projects img:hover {
@@ -495,18 +545,11 @@ form textarea {
     height: auto;
   }
 
-  .project-card p,
-  .project-card li {
-    font-weight: 400;
-    line-height: 1.75rem;
-    color: #344563;
-  }
-
   .info-project {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-top: 1.1rem;
+    padding-top: 2.1rem;
   }
 
   .info-project .title {
@@ -559,15 +602,6 @@ form textarea {
     flex-direction: row;
     gap: 0.5rem;
     margin-top: 1rem;
-  }
-
-  .lang-child > li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    background-color: #f7f7f9;
-    padding: 1rem;
-    align-items: center;
   }
 
   .lang-child .js,

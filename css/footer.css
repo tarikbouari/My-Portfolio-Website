@@ -1,3 +1,4 @@
+
 /**  Footer and contact-form ***************************/
 .contact {
   display: flex;
@@ -62,6 +63,7 @@ form textarea {
 .form .primary-button {
   display: block;
   background: #fff;
+  transition: background 0.5s;
 }
 
 .form .primary-button:hover {
