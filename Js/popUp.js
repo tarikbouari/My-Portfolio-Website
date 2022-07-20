@@ -97,9 +97,9 @@ function projectLoad(item) {
   <div class="links">
   <a href="${item.liveDemo}">See live</a>
   <a href="${item.source}"> See Source</a>
-  <div>
-  <div>
-  <div>
+  </div>
+  </div>
+  </div>
    `;
   proContainer.innerHTML = box;
   proContainer.classList.add('popbox');
