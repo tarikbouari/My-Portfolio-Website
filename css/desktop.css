@@ -265,4 +265,44 @@
     background: #fff;
     margin: 0 auto;
   }
+
+  .popbox {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    width: 70%;
+    top: 60px;
+    padding: 1rem;
+    margin: 0 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    background-color: #fff;
+  }
+
+  .closebtn {
+    left: 48rem;
+    position: absolute;
+    z-index: 7;
+    top: 85px;
+    display: none;
+  }
+
+  .pop-up {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-lang {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .box-tech {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }

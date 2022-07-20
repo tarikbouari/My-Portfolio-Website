@@ -86,7 +86,9 @@ function projectLoad(item) {
   <li>${item.subtitle[2]}</li>
   </ul>
   <img src='${item.img}'>
+  <div class="box-lang">
   <p>${item.description}</p>
+  <div class=""box-tech>
   <ul class="language">
   <li>${item.technologies[0]}</li>
   <li>${item.technologies[1]}</li>
@@ -95,6 +97,8 @@ function projectLoad(item) {
   <div class="links">
   <a href="${item.liveDemo}">See live</a>
   <a href="${item.source}"> See Source</a>
+  <div>
+  <div>
   <div>
    `;
   proContainer.innerHTML = box;

@@ -67,6 +67,18 @@
   list-style: none;
 }
 
+.box-lang {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.box-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* end ******* */
 
 .info-project .title {
