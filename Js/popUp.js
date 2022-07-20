@@ -109,9 +109,9 @@ function projectLoad(item) {
   proContainer.innerHTML = box;
   proContainer.classList.add("popbox");
   proContainer.style.display = "flex";
-  mainPage.style.display = "none";
-  about.style.display = "none";
-  footerSection.style.display = "none";
+  mainPage.style.opacity = "0.5";
+  about.style.opacity= "0.5";
+  footerSection.style.opacity= "0.5";
   presentation.classList.add("blur");
   header.classList.add("blur");
 
@@ -123,8 +123,6 @@ closeBtn.addEventListener("click", () => {
   proContainer.style.display = "none";
   closeBtn.style.display = "none";
   mainPage.style.display = "grid";
-  footerSection.style.display = "block";
-  about.style.display = "flex";
   presentation.classList.remove("blur");
   header.classList.remove("blur");
   location.reload();
