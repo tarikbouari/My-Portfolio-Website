@@ -64,6 +64,7 @@ const about = document.getElementById("about");
 const footerSection = document.querySelector("footer");
 const presentation = document.getElementById("presentation");
 const header = document.querySelector("header");
+const page = document.querySelector("main");
 
 console.log(mainPage);
 
@@ -71,7 +72,7 @@ const btnProject = document.querySelectorAll(".primary-button");
 
 btnProject.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    // e.preventDefault();
+    window.scrollTo(0,0);
     let btnData = e.target.dataset.id;
     console.log(btnData);
     projectLoad(project[btnData]);
@@ -90,7 +91,7 @@ function projectLoad(item) {
   <li>${item.subtitle[1]}</li>
   <li>${item.subtitle[2]}</li>
   </ul>
-  <img src='${item.img}'>
+  <img class="image" src='${item.img}'>
   <div class="box-lang">
   <p>${item.description}</p>
   <div class=""box-tech>
@@ -106,28 +107,38 @@ function projectLoad(item) {
   </div>
   </div>
    `;
-  proContainer.innerHTML = box;
-  proContainer.classList.add("popbox");
-  proContainer.style.display = "flex";
-  mainPage.style.opacity = "0.5";
-  about.style.opacity= "0.5";
-  footerSection.style.opacity= "0.5";
-  presentation.classList.add("blur");
-  header.classList.add("blur");
+proContainer.innerHTML = box;
+proContainer.classList.add("popbox");
+proContainer.style.display = "flex";
+addBlur();
 
-  const closeBtn = document.getElementById("closebtn");
+
+const closeBtn = document.getElementById("closebtn");
 
 closeBtn.addEventListener("click", () => {
   proContainer.classList.remove("popbox");
-  // closeBtn.classList.remove('closebtn');
   proContainer.style.display = "none";
   closeBtn.style.display = "none";
   mainPage.style.display = "grid";
-  presentation.classList.remove("blur");
-  header.classList.remove("blur");
-  location.reload();
-  console.log("I was clicked")
+  removeBlur();
 });
 }
 
+function addBlur() {
+  presentation.classList.add("blur");
+  header.classList.add("blur");
+  mainPage.classList.add("blur");
+  footerSection.classList.add("blur");
+  about.classList.add("blur");
+  mainPage.style.display = "none";
+  footerSection.style.display ="none";
+}
+
+function removeBlur() {
+  presentation.classList.remove("blur");
+  header.classList.remove("blur");
+  mainPage.classList.remove("blur");
+  footerSection.classList.remove("blur");
+  about.classList.remove("blur");
+}
 
