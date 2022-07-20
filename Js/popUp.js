@@ -114,9 +114,8 @@ function projectLoad(item) {
   footerSection.style.display = "none";
   presentation.classList.add("blur");
   header.classList.add("blur");
-}
 
-const closeBtn = document.getElementById("closebtn");
+  const closeBtn = document.getElementById("closebtn");
 
 closeBtn.addEventListener("click", () => {
   proContainer.classList.remove("popbox");
@@ -129,4 +128,8 @@ closeBtn.addEventListener("click", () => {
   presentation.classList.remove("blur");
   header.classList.remove("blur");
   location.reload();
+  console.log("I was clicked")
 });
+}
+
+
