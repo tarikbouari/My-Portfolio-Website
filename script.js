@@ -32,15 +32,15 @@ function closeAll() {
   logo.style.display = 'block';
   logoBar.sgityle.display = 'flex';
 }
-  
+
 closeMenu.addEventListener('click', () => {
   closeAll();
-  location.reload();
+  window.location.reload();
 });
 
 navItem.forEach((item) => {
   item.addEventListener('click', () => {
     closeAll();
-    location.reload();
+    window.location.reload();
   });
 });
