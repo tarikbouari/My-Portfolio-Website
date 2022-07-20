@@ -64,7 +64,7 @@ const about = document.getElementById('about');
 const footerSection = document.querySelector('footer');
 const presentation = document.getElementById('presentation');
 const header = document.querySelector('header');
-const btnProject = document.querySelectorAll('.primary-button');
+const btnProject = document.querySelectorAll('.projects .primary-button');
 
 function addBlur() {
   presentation.classList.add('blur');
@@ -122,6 +122,7 @@ function projectLoad(item) {
     proContainer.style.display = 'none';
     closeBtn.style.display = 'none';
     mainPage.style.display = 'grid';
+    footerSection.style.display = 'block'
     removeBlur();
   });
 }
