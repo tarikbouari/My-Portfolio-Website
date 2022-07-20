@@ -56,8 +56,11 @@ const proContainer = document.getElementById('pro-container');
 const boxContainer = document.createElement('div');
 boxContainer.className = 'note';
 const closeBtn = document.getElementById('closebtn');
-const mainPage = document.querySelector('main');
+const mainPage = document.getElementById('projects');
+const about = document.getElementById('about');
 const footerSection = document.querySelector('footer'); 
+const presentation = document.getElementById('presentation'); 
+const header = document.querySelector('header');
 
 console.log(mainPage);
 
@@ -99,8 +102,11 @@ function projectLoad(item) {
   // closeBtn.classList.add('closebtn');
   closeBtn.style.display = 'block'
   proContainer.style.display ='flex';
-  // mainPage.style.display="none";
-  // footerSection.style.display="none";
+  mainPage.style.display="none";
+  about.style.display="none";
+  footerSection.style.display="none";
+  presentation.classList.add('blur');
+  header.classList.add('blur');
 }
 
 closeBtn.addEventListener('click', () =>{  
@@ -108,7 +114,11 @@ closeBtn.addEventListener('click', () =>{
   // closeBtn.classList.remove('closebtn');
   proContainer.style.display ='none';
   closeBtn.style.display = 'none';
-  // mainPage.style.display="block";
-  // footerSection.style.display="block";
+  mainPage.style.display="grid";
+  footerSection.style.display="block";
+  about.style.display="flex";
+  presentation.classList.remove('blur');
+  header.classList.remove('blur');
+  location.reload();
 
 })
