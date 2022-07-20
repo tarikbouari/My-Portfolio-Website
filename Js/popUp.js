@@ -79,7 +79,12 @@ btnProject.forEach( (btn) => {
 
 function projectLoad(item) {
 
-  box = `<h2 class='title'>${item.title}</h2>
+  box = `
+  <div class="title-container">
+   <h2 class='title'>${item.title}</h2>
+  <img src="images/close.svg" id="closebtn" class="closebtn" alt="close-icon">
+  </div>
+
   <ul class="specific">
   <li>${item.subtitle[0]}</li>
   <li>${item.subtitle[1]}</li>
