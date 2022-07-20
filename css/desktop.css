@@ -281,14 +281,6 @@
     background-color: #fff;
   }
 
-  .closebtn {
-    left: 48rem;
-    position: absolute;
-    z-index: 7;
-    top: 85px;
-    display: none;
-  }
-
   .pop-up {
     display: flex;
     justify-content: center;
