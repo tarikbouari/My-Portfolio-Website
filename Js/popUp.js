@@ -111,9 +111,9 @@ function projectLoad(item) {
   <li>Bootstrap</li>
   </ul>
   <div class="links">
-  <a href="${item.liveDemo}"><span>See live</span>   <img src="/images/arraw.svg" alt="ellipse icon"></a>
+  <a href="${item.liveDemo}"><span>See live</span><img src="./images/arraw.svg" alt="ellipse icon"></a>
  
-  <a href="${item.source}"><span>See Source</span>  <img src="/images/github.svg" alt="ellipse icon"></a>
+  <a href="${item.source}"><span>See Source</span><img src="./images/github.svg" alt="ellipse icon"></a>
   </div>
   </div>
   </div>
