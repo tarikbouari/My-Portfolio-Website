@@ -1,5 +1,5 @@
 const data = {}; 
-const local = {n}
+const local = {};
 
 const username = document.getElementById('name');
 const text = document.getElementById('test');
@@ -15,19 +15,31 @@ form.addEventListener('submit', (event) => {
   const emailValue = email.value;
   event.preventDefault();
   if (emailValue === emailValue.toLowerCase()) {
+    local['fullName']= fullName;
+    local['email']= emailValue;
+    local['textarea']= textMessage;
+    if(Object.keys(data).length === 0){
+        localStorage.setItem('user',JSON.stringify(local))
+      } else{ 
+         if ((data['fullName'] === local['fullName']) && (data['email'] === local['email']) &&
+         (data['texarea'] === data['textarea'])) {
+           
+
+         } else {
+            localStorage.setItem('user',JSON.stringify(local))
+         }
+         
+      }
     form.submit();
     form.reset();
     warning.style.visibility = 'hidden';
     errorMessage.style.visibility = 'hidden';
+    
   } else {
     form.focus();
     emailValue.toLowerCase();
     errorMessage.innerHTML = 'Please enter a valid email address (Lowercase only)';
     warning.style.visibility = 'visible';
   }
-  if(Object.keys(data).length === 0){
-    localStorage.setItem('user',JSON.stringify(data))
-  } else {
-
-  }
+  
 });
