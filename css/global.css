@@ -113,3 +113,47 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.submit-btn{
+
+  padding: 1rem 1.4rem;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background: white;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: #6070ff;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+
+.submit-btn:active {
+  background: #2230d2;
+  outline: none;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.warning-icon{
+  color: red;
+  margin-top: 12px;
+  visibility: hidden;
+}
+.error-message {
+  color: white;
+  margin-top: 1rem;
+  font-size: small;
+}
