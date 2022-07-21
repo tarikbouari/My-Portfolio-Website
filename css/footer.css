@@ -7,7 +7,7 @@
   padding: 1.8rem;
   border-radius: 5rem 0 0 0;
   background-color: #6070ff;
-  background-image: url('./images/contact.png');
+  background-image: url('/images/contact.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
