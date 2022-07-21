@@ -4,7 +4,7 @@ const project = [
     title: 'Tonic',
     img: 'images/Snapshoot.jpg',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html'],
+    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
     description:
       'sudja Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -15,7 +15,7 @@ const project = [
     title: 'Tonic',
     img: 'images/tonic.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html'],
+    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
     description:
       'Meshu Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -26,7 +26,7 @@ const project = [
     title: 'Tonic',
     img: 'images/multi.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html'],
+    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
     description:
       'tarik Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -37,7 +37,7 @@ const project = [
     title: 'Multi-Post stories',
     img: 'images/gray.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html'],
+    technologies: ['javascript', 'Css', 'Html', 'Github','ruby','bootstrap'],
     description:
       'hello Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -48,7 +48,7 @@ const project = [
     title: 'Multi-Post stories',
     img: 'images/dance.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html'],
+    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
     description:
       'hi Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -105,9 +105,16 @@ function projectLoad(item) {
   <li>${item.technologies[1]}</li>
   <li>${item.technologies[2]}</li>
   </ul>
+  <ul class="languages">
+  <li>Github</li>
+  <li>Ruby</li>
+  <li>Bootstrap</li>
+  </ul>
   <div class="links">
-  <a href="${item.liveDemo}">See live</a>
-  <a href="${item.source}"> See Source</a>
+  <a href="${item.liveDemo}"><span>See live</span>   <img src="/images/arraw.svg" alt="ellipse icon"></a>
+ 
+  <a href="${item.source}"><span>See Source</span>  <img src="/images/github.svg" alt="ellipse icon"></a>
+  </div>
   </div>
   </div>
   </div>
