@@ -92,11 +92,7 @@
     height: 100vh;
     border-radius: 0 0 0 6rem;
     background-color: #fff;
-<<<<<<< HEAD
     background-image: url('../images/header2.png');
-=======
-    background-image: url('/images/header2.png');
->>>>>>> fefa8572b880fdadb34de7c468101d517d3d6c37
     background-size: cover;
     background-repeat: no-repeat;
   }
