@@ -114,8 +114,7 @@ a {
   justify-content: space-between;
 }
 
-.submit-btn{
-
+.submit-btn {
   padding: 1rem 1.4rem;
   border: 1px solid #6070ff;
   color: #396df2;
@@ -147,11 +146,12 @@ a {
   justify-content: center;
 }
 
-.warning-icon{
+.warning-icon {
   color: red;
   margin-top: 12px;
   visibility: hidden;
 }
+
 .error-message {
   color: white;
   margin-top: 1rem;
