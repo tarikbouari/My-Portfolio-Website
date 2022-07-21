@@ -6,7 +6,7 @@
   height: 80vh;
   border-radius: 0 0 0 6rem;
   background-color: #fff;
-  background-image: url('/images/background.png');
+  background-image: url('../images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -141,4 +141,17 @@ h1.name {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.pro-container {
+  display: flex;
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
 }

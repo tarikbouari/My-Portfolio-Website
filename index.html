@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tarik-bouari</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
 
 <body>
     <header class="header">
@@ -34,9 +34,9 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="section-presentation">
-            <div class="presentation" id="presentation">
+    <main class="main">
+        <section class="section-presentation" id="presentation">
+            <div class="presentation">
                 <h1 class="name">I’m Tarik Glad to see you!</h1>
                 <p class="present">I’m a software developer! I
                     can help you build a product , feature or
@@ -60,7 +60,6 @@
                 </div>
             </div>
         </section>
-
         <!--Project Section-->
         <section class="projects" id="projects">
             <div class="project-card">
@@ -80,8 +79,8 @@
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <div><button class="primary-button">See
-                            Project</button></div>
+                    <div><button class="primary-button" data-id="0">See
+                        Project</button></div>
                 </div>
             </div>
             <div class="project-card">
@@ -101,8 +100,8 @@
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <div><button class="primary-button">See
-                            Project</button></div>
+                    <div><button class="primary-button" data-id="1">See
+                        Project</button></div>
                 </div>
             </div>
             <div class="project-card">
@@ -122,8 +121,8 @@
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <div><button class="primary-button">See
-                            Project</button></div>
+                    <div><button class="primary-button" data-id="2">See
+                        Project</button></div>
                 </div>
             </div>
             <div class="project-card">
@@ -143,8 +142,8 @@
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <div><button class="primary-button">See
-                            Project</button></div>
+                    <div><button class="primary-button" data-id="3">See
+                        Project</button></div>
                 </div>
             </div>
             <div class="project-card">
@@ -164,12 +163,15 @@
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <div><button class="primary-button">See
+                    <div><button class="primary-button" data-id="4">See
                             Project</button></div>
                 </div>
             </div>
+           
         </section>
-
+        <section class="pop-up">
+        <div id="pro-container" class=""> </div>
+        </section>
         <!--About me Section-->
         <section class="about-me" id="about">
             <div class="personal-info">
@@ -194,8 +196,8 @@
                         <li><a href="#"><img class="icon" src="images/Vector5.png" alt="twitter"></a></li>
                     </ul>
                 </div>
-                <div><button class="primary-button">Get my
-                        resume</button></div>
+                <div><button class="primary-button">Get my resume
+                        </button></div>
             </div>
             <div class="code-lang">
                 <ul class="ul-lang">
@@ -264,6 +266,7 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="Js/popUp.js"></script> 
 </body>
 
 </html>
