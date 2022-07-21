@@ -1,8 +1,8 @@
 let savedData = {};
 let newInputData = {};
 
-const username = document.getElementById("name");
-const text = document.getElementById("test");
+const nameBox = document.getElementById("name");
+const textBox = document.getElementById("test");
 const email = document.getElementById("email");
 const form = document.getElementsByClassName("form")[0];
 const errorMessage = document.getElementsByClassName("error-message")[0];
@@ -10,14 +10,14 @@ const warning = document.querySelector(".warning-icon");
 
 if (localStorage.getItem("user") != null) {
   savedData = JSON.parse(localStorage.getItem("user"));
-  username.value = savedData["fullName"];
+  nameBox.value = savedData["fullName"];
   email.value = savedData["email"];
-  text.value = savedData["textarea"];
+  textBox.value = savedData["textarea"];
 }
 
 form.addEventListener("submit", (event) => {
-  const fullName = username.value;
-  const textMessage = text.value;
+  const fullName = nameBox.value;
+  const textMessage = textBox.value;
   const emailValue = email.value;
   event.preventDefault();
   if (emailValue === emailValue.toLowerCase()) {
