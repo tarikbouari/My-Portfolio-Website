@@ -92,7 +92,7 @@
     height: 100vh;
     border-radius: 0 0 0 6rem;
     background-color: #fff;
-    background-image: url('./images/header2.png');
+    background-image: url('../images/header2.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -237,8 +237,7 @@
     padding: 1.8rem;
     border-radius: 5rem 0 0 0;
     background-color: #6070ff;
-    background-image: url('./images/contact1.png');
-    background-size: cover;
+    background-image: url('../images/contactDesk.png');
     background-repeat: no-repeat;
     text-align: center;
   }

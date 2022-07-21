@@ -129,6 +129,7 @@ function projectLoad(item) {
     proContainer.style.display = 'none';
     closeBtn.style.display = 'none';
     mainPage.style.display = 'grid';
+    footerSection.style.display = 'block';
     removeBlur();
   });
 }
