@@ -1,5 +1,5 @@
-const data = {};
-const local = {};
+let data = {};
+let local = {};
 
 const username = document.getElementById("name");
 const text = document.getElementById("test");
@@ -8,7 +8,7 @@ const form = document.getElementsByClassName("form")[0];
 const errorMessage = document.getElementsByClassName("error-message")[0];
 const warning = document.querySelector(".warning-icon");
 
-if (localStorage.length >= 1) {
+if (localStorage.getItem('user')!=null) {
   data = JSON.parse(localStorage.getItem("user"));
   username.value = data["fullName"];
   email.value = data["email"];
