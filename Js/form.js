@@ -7,6 +7,9 @@ form.addEventListener('submit', (event)=>{
     let emailValue = email.value;
     event.preventDefault();
     if (emailValue === emailValue.toLowerCase()) {
-        
+        form.submit();
+    }else{
+        emailValue.toLowerCase();
+        errorMessage[0].innerHTML = "Please enter a valid email address (Lowercase only)";
     }
 })
