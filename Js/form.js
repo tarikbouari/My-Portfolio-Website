@@ -1,5 +1,5 @@
-let data = {};
-let local = {};
+let savedData = {};
+let newInputData = {};
 
 const username = document.getElementById("name");
 const text = document.getElementById("test");
@@ -8,11 +8,11 @@ const form = document.getElementsByClassName("form")[0];
 const errorMessage = document.getElementsByClassName("error-message")[0];
 const warning = document.querySelector(".warning-icon");
 
-if (localStorage.getItem('user')!=null) {
-  data = JSON.parse(localStorage.getItem("user"));
-  username.value = data["fullName"];
-  email.value = data["email"];
-  text.value = data["textarea"];
+if (localStorage.getItem("user") != null) {
+  savedData = JSON.parse(localStorage.getItem("user"));
+  username.value = savedData["fullName"];
+  email.value = savedData["email"];
+  text.value = savedData["textarea"];
 }
 
 form.addEventListener("submit", (event) => {
@@ -21,17 +21,21 @@ form.addEventListener("submit", (event) => {
   const emailValue = email.value;
   event.preventDefault();
   if (emailValue === emailValue.toLowerCase()) {
-    local["fullName"] = fullName;
-    local["email"] = emailValue;
-    local["textarea"] = textMessage;
-    if (Object.keys(data).length === 0) {
-      localStorage.setItem("user", JSON.stringify(local));
+    newInputData["fullName"] = fullName;
+    newInputData["email"] = emailValue;
+    newInputData["textarea"] = textMessage;
+    if (Object.keys(savedData).length === 0) {
+      localStorage.setItem("user", JSON.stringify(newInputData));
     } else {
-      if (!(data["fullName"] === local["fullName"] &&
-        data["email"] === local["email"] &&
-          data["textarea"] === data["textarea"])) {
-        localStorage.setItem("user", JSON.stringify(local));  
-      } 
+      if (
+        !(
+          savedData["fullName"] === newInputData["fullName"] &&
+          savedData["email"] === newInputData["email"] &&
+          savedData["textarea"] === newInputData["textarea"]
+        )
+      ) {
+        localStorage.setItem("user", JSON.stringify(newInputData));
+      }
     }
     form.submit();
     form.reset();
