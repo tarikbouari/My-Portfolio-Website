@@ -4,7 +4,7 @@ const project = [
     title: 'Tonic',
     img: 'images/Snapshoot.jpg',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
+    technologies: ['javascript', 'Css', 'Html', 'Github', 'ruby', 'bootstrap'],
     description:
       'sudja Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -15,7 +15,7 @@ const project = [
     title: 'Tonic',
     img: 'images/tonic.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
+    technologies: ['javascript', 'Css', 'Html', 'Github', 'ruby', 'bootstrap'],
     description:
       'Meshu Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -26,7 +26,7 @@ const project = [
     title: 'Tonic',
     img: 'images/multi.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
+    technologies: ['javascript', 'Css', 'Html', 'Github', 'ruby', 'bootstrap'],
     description:
       'tarik Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -37,7 +37,7 @@ const project = [
     title: 'Multi-Post stories',
     img: 'images/gray.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html', 'Github','ruby','bootstrap'],
+    technologies: ['javascript', 'Css', 'Html', 'Github', 'ruby', 'bootstrap'],
     description:
       'hello Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',
@@ -48,7 +48,7 @@ const project = [
     title: 'Multi-Post stories',
     img: 'images/dance.png',
     subtitle: ['Canopy', 'Backend', '2015'],
-    technologies: ['javascript', 'Css', 'Html','Github','ruby','bootstrap'],
+    technologies: ['javascript', 'Css', 'Html', 'Github', 'ruby', 'bootstrap'],
     description:
       'hi Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     liveDemo: 'https://tarikbouari.github.io/My-Portfolio-Website/',

@@ -259,7 +259,13 @@
                         required>
                     <input class="input" type="email" name="email" id="email" placeholder="enter your email" required>
                     <textarea name="comment" placeholder="Write your message here" maxlength="500" rows="4" cols="35" required></textarea>
-                    <button class="primary-button" type="submit">Get it touch</button>
+                    <div class="form-btn-container">
+                        <button class="submit-btn" type="submit">Get it touch</button> 
+                    </div>
+                    <div class="error">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20px" height="20px" class="warning-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896zm0 192a58.432 58.432 0 0 0-58.24 63.744l23.36 256.384a35.072 35.072 0 0 0 69.76 0l23.296-256.384A58.432 58.432 0 0 0 512 256zm0 512a51.2 51.2 0 1 0 0-102.4a51.2 51.2 0 0 0 0 102.4z"/></svg>
+                        <span class="error-message"></span>
+                    </div>
                 </form>
             </div>
         </section>
@@ -267,6 +273,7 @@
     </footer>
     <script src="script.js"></script>
     <script src="Js/popUp.js"></script> 
+    <script src="Js/form.js"></script>
 </body>
 
 </html>
