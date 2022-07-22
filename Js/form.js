@@ -12,3 +12,28 @@ if (localStorage.getItem("user") != null) {
   email.value = savedData.email;
   textBox.value = savedData.textarea;
 }
+
+nameBox.addEventListener('focusout', (event) => {
+    const formData = {
+      fullName: nameBox.value,
+      textarea: textBox.value,
+      email: email.value,
+    };
+    localStorage.setItem("user", JSON.stringify(formData));
+  });
+  email.addEventListener("focusout", (event) => {
+    const formData = {
+      fullName: nameBox.value,
+      textarea: textBox.value,
+      email: email.value,
+    };
+    localStorage.setItem("user", JSON.stringify(formData));
+  });
+  textBox.addEventListener("focusout", (event) => {
+    const formData = {
+      fullName: nameBox.value,
+      textarea: textBox.value,
+      email: email.value,
+    };
+    localStorage.setItem("user", JSON.stringify(formData));
+  });
