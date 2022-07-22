@@ -73,7 +73,7 @@ function addBlur() {
   footerSection.classList.add('blur');
   about.classList.add('blur');
   mainPage.style.display = 'none';
-  footerSection.style.display = 'none';
+  footerSection.style.display = 'block';
 }
 
 function removeBlur() {
