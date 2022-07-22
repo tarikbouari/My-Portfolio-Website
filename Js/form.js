@@ -37,3 +37,34 @@ nameBox.addEventListener('focusout', (event) => {
     };
     localStorage.setItem("user", JSON.stringify(formData));
   });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (email.value === email.value.toLowerCase()) {
+      form.submit();
+      form.reset();
+      warning.style.visibility = "hidden";
+      errorMessage.style.visibility = "hidden";
+    } else {
+      form.focus();
+      email.value.toLowerCase();
+      errorMessage.innerHTML =
+        "Please enter a valid email address (Lowercase only)";
+      warning.style.visibility = "visible";
+    }
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
