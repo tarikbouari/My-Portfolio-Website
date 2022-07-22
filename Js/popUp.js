@@ -123,7 +123,7 @@ function projectLoad(item) {
   proContainer.classList.add('popbox');
   proContainer.style.display = 'flex';
   addBlur();
-  const closeBtn = document.getElementById('closebtn');
+  const closeBtn = document.geElementById('closebtn');
   closeBtn.addEventListener('click', () => {
     proContainer.classList.remove('popbox');
     proContainer.style.display = 'none';
