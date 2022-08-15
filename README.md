@@ -26,6 +26,7 @@ it was assigned to me by Microverse. A figma prototype template was provided.
 
 
 
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -41,11 +42,13 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc.
-## Responsible version
- ![mobile]()
-![desktop]()
 
 ## RESPONSIBLE VERSION 
+![tablet screen](https://user-images.githubusercontent.com/104431739/184697418-8c782150-6405-4b94-8807-9f3f956de23d.PNG)
+![screen size small](https://user-images.githubusercontent.com/104431739/184698856-cc09519c-8544-4539-935a-6dde67559016.PNG)
+![mobile screen 2](https://user-images.githubusercontent.com/104431739/184699775-c515ec35-4815-4624-9b2a-72bb8255e12d.PNG)
+![mokup responsible](https://user-images.githubusercontent.com/104431739/184699974-615ef875-1004-4e67-9533-4db590826e22.PNG)
+
 
 
 
