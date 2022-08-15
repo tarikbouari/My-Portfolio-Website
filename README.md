@@ -42,8 +42,8 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc.
 ## Responsible version
- ![mobile](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/image1%20(3).jpeg)
-![desktop](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/mokup%20responsible.PNG)
+ ![mobile]()
+![desktop]()
 
 ## RESPONSIBLE VERSION 
 
