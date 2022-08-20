@@ -1,11 +1,14 @@
+//Smoth scroll to section with Jquery
 
+$(".nav-a").on("click", function (e) {
+  if (this.hash !== "") {
+    const hash = this.hash;
 
-//
-const link = document.querySelector('.nav-links');
-
-link.addEventListener('click', e =>{
-    e.preventDefault();
-   const navLink = e.target;
-   console.log("hello");
-    if(lin)
-})
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800
+    );
+  }
+});
