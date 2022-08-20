@@ -180,11 +180,18 @@ a {
   padding: 2rem;
   border-bottom: 1px solid #fff;
 }
-.nav-ul li:hover {
+/* .nav-ul li:hover {
   background-color: rgb(53, 87, 87);
-}
+} */
 
 .nav-ul li a {
   color: #fff;
   font-size: 1.5rem;
 }
+
+.nav-ul li:first-child{
+  display: flex;
+  justify-content: space-between;
+
+} 
+
