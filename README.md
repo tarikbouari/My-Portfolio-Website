@@ -16,6 +16,8 @@ it was assigned to me by Microverse. A figma prototype template was provided.
 ## Live demo 
 [click here](https://tarikbouari.github.io/My-Portfolio-Website/)
 
+## Source code 
+[click here](https://github.com/tarikbouari/My-Portfolio-Website)
 ## Authors
 
 👤 **Tarik Bouari**
@@ -23,6 +25,7 @@ it was assigned to me by Microverse. A figma prototype template was provided.
 - GitHub: [@tarikbouari](https://github.com/tarikbouari))
 - Twitter: [@tarikbouari](https://twitter.com/TarikBouari)
 - LinkedIn: [tarikbouari](https://www.linkedin.com/in/tarik-bouari-44b7191a6/)
+
 
 
 
@@ -41,11 +44,12 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc.
-## Responsible version
- ![mobile](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/image1%20(3).jpeg)
-![desktop](https://github.com/tarikbouari/My-Portfolio-Website/blob/added-transition/images/mokup%20responsible.PNG)
 
 ## RESPONSIBLE VERSION 
+![tablet screen](https://user-images.githubusercontent.com/104431739/184697418-8c782150-6405-4b94-8807-9f3f956de23d.PNG)
+![screen size small](https://user-images.githubusercontent.com/104431739/184698856-cc09519c-8544-4539-935a-6dde67559016.PNG)
+![mokup responsible](https://user-images.githubusercontent.com/104431739/184699974-615ef875-1004-4e67-9533-4db590826e22.PNG)
+
 
 
 
