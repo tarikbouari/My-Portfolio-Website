@@ -55,7 +55,7 @@ menuIcon.addEventListener("click", (e) => {
 
   const menuDiv = ` <div>
                       <ul class="nav-ul">
-                          <li class="nav-item"> <a class="nav-a" href="#projects"> Portfolio </a> </li>
+                          <li class="nav-item"> <a class="nav-a" href="#projects"> Portfolio </a><img src="images/close.svg" class="close-icon" alt="close-icon"> </li>
                           <li class="nav-item"><a  class="nav-a" href="#about">About</a> </li>
                           <li class="nav-item"><a class="nav-a" href="#contact">Contact</a> </li>
                       </ul>
@@ -63,5 +63,10 @@ menuIcon.addEventListener("click", (e) => {
 
   container.innerHTML += menuDiv;
   document.body.appendChild(container);
-  console.log(menuDiv);
+  const closeIcon = document.querySelector(".close-icon");
+
+  closeIcon.addEventListener("click", (e) => {
+    container.style.display = "none";
+    // document.location.reload();
+  });
 });
