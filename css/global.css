@@ -158,3 +158,33 @@ a {
   margin-top: 1rem;
   font-size: small;
 }
+
+.menu-mobile {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  background-color: #6070ff;
+  z-index: 8;
+  left: 0;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+.nav-ul li {
+  padding: 2rem;
+  border-bottom: 1px solid #fff;
+}
+.nav-ul li:hover {
+  background-color: rgb(53, 87, 87);
+}
+
+.nav-ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+}
