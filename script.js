@@ -35,13 +35,13 @@
 
 // closeMenu.addEventListener("click", () => {
 //   closeAll();
-//   window.location.reload();
+//   // window.location.reload();
 // });
 
 // navItem.forEach((item) => {
 //   item.addEventListener("click", () => {
 //     closeAll();
-//     window.location.reload();
+//     // window.location.reload();
 //   });
 // });
 
@@ -67,6 +67,27 @@ menuIcon.addEventListener("click", (e) => {
 
   closeIcon.addEventListener("click", (e) => {
     container.style.display = "none";
-    // document.location.reload();
+    document.location.reload();
+  });
+
+  // const navElement = document.querySelectorAll(".nav-a");
+  // navElement.forEach((item) => {
+  //   item.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     // container.style.display = "none";
+  //   });
+  // });
+
+  $(".nav-a").on("click", function (e) {
+    if (this.hash !== "") {
+      const hash = this.hash;
+      container.style.display = "none";
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800
+      );
+    }
   });
 });
