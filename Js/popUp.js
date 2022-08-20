@@ -73,7 +73,7 @@ function addBlur() {
   footerSection.classList.add('blur');
   about.classList.add('blur');
   mainPage.style.display = 'none';
-  footerSection.style.display = 'none';
+  footerSection.style.display = 'block';
 }
 
 function removeBlur() {
@@ -123,14 +123,17 @@ function projectLoad(item) {
   proContainer.classList.add('popbox');
   proContainer.style.display = 'flex';
   addBlur();
+
   const closeBtn = document.getElementById('closebtn');
   closeBtn.addEventListener('click', () => {
-    proContainer.classList.remove('popbox');
-    proContainer.style.display = 'none';
+    // proContainer.classList.remove("popbox");
+    proContainer.style.transform = 'scale(0)';
+    // proContainer.style.display = "none";
     closeBtn.style.display = 'none';
     mainPage.style.display = 'grid';
     footerSection.style.display = 'block';
     removeBlur();
+    document.location.reload();
   });
 }
 
