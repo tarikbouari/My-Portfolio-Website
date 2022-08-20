@@ -1,14 +1,14 @@
-//Smoth scroll to section with Jquery
+// Smoth scroll to section with Jquery
 
-$(".nav-a").on("click", function (e) {
-  if (this.hash !== "") {
-    const hash = this.hash;
+$('.nav-a').on('click', function (e) {
+  if (this.hash !== '') {
+    const { hash } = this;
 
-    $("html, body").animate(
+    $('html, body').animate(
       {
         scrollTop: $(hash).offset().top,
       },
-      800
+      800,
     );
   }
 });

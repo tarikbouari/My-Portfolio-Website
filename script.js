@@ -1,11 +1,10 @@
+const menuIcon = document.querySelector('.menu-icon');
 
-const menuIcon = document.querySelector(".menu-icon");
-
-menuIcon.addEventListener("click", (e) => {
+menuIcon.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log("hello");
-  const container = document.createElement("div");
-  container.classList.add("menu-mobile");
+  console.log('hello');
+  const container = document.createElement('div');
+  container.classList.add('menu-mobile');
 
   const menuDiv = ` <div>
                       <ul class="nav-ul">
@@ -18,23 +17,23 @@ menuIcon.addEventListener("click", (e) => {
   container.innerHTML += menuDiv;
 
   document.body.appendChild(container);
-  const closeIcon = document.querySelector(".close-icon");
-  container.style.transform = "translateX(0)";
-  container.style.transition = "0.5s all ease";
+  const closeIcon = document.querySelector('.close-icon');
+  container.style.transform = 'translateX(0)';
+  container.style.transition = '0.5s all ease';
 
-  closeIcon.addEventListener("click", (e) => {
+  closeIcon.addEventListener('click', (e) => {
     document.location.reload();
   });
 
-  $(".nav-a").on("click", function (e) {
-    if (this.hash !== "") {
-      const hash = this.hash;
-      container.style.display = "none";
-      $("html, body").animate(
+  $('.nav-a').on('click', function (e) {
+    if (this.hash !== '') {
+      const { hash } = this;
+      container.style.display = 'none';
+      $('html, body').animate(
         {
           scrollTop: $(hash).offset().top,
         },
-        800
+        800,
       );
     }
   });

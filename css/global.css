@@ -176,7 +176,7 @@ a {
 
 .nav-ul {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .nav-ul li {
@@ -194,9 +194,7 @@ a {
   font-size: 1.5rem;
 }
 
-.nav-ul li:first-child{
+.nav-ul li:first-child {
   display: flex;
   justify-content: space-between;
 }
-
-
