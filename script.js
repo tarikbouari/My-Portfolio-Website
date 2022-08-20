@@ -62,21 +62,15 @@ menuIcon.addEventListener("click", (e) => {
                     <div>`;
 
   container.innerHTML += menuDiv;
+
   document.body.appendChild(container);
   const closeIcon = document.querySelector(".close-icon");
+  container.style.transform = "translateX(0)";
+  container.style.transition = "0.5s all ease";
 
   closeIcon.addEventListener("click", (e) => {
-    container.style.display = "none";
     document.location.reload();
   });
-
-  // const navElement = document.querySelectorAll(".nav-a");
-  // navElement.forEach((item) => {
-  //   item.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  //     // container.style.display = "none";
-  //   });
-  // });
 
   $(".nav-a").on("click", function (e) {
     if (this.hash !== "") {
