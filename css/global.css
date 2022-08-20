@@ -171,18 +171,18 @@ a {
 
 .nav-ul {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  
+  flex-direction: column;  
 }
 
 .nav-ul li {
   padding: 2rem;
   border-bottom: 1px solid #fff;
+  transition: backgroun-color 5ms;
 }
-/* .nav-ul li:hover {
+
+.nav-ul li:hover {
   background-color: rgb(53, 87, 87);
-} */
+}
 
 .nav-ul li a {
   color: #fff;
@@ -192,6 +192,11 @@ a {
 .nav-ul li:first-child{
   display: flex;
   justify-content: space-between;
+}
 
-} 
-
+/* .close-icon{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  z-index: 10;
+} */
