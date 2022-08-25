@@ -5,7 +5,7 @@
 
 ## Description
 
-This is my portofolio website. It shows of my various projects and skills as a software developer. Built with Html/CSS. 
+This is my portofolio website. It shows my various projects and skills as a software developer. Built with Html/CSS. 
 
 
 ## Built With
