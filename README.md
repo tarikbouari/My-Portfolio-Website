@@ -3,9 +3,10 @@
 
 # My-Portfolio-website
 
-## Description 
-This project is my portfolio responsible site that contains all my projects as a software developer. it highlights my values and background.  
-it was assigned to me by Microverse. A figma prototype template was provided. 
+## Description
+
+This is my portofolio website. It shows my various projects and skills as a software developer. Built with Html/CSS. 
+
 
 ## Built With
 
