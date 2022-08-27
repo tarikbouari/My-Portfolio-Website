@@ -106,10 +106,6 @@ a {
 
 .blur {
   filter: blur(7px);
-  -webkit-filter: blur(7px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
 }
 
 .title-container {
