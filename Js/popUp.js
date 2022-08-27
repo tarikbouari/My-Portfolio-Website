@@ -75,6 +75,7 @@ function addBlur() {
   mainPage.style.display = "none";
   footerSection.style.display = "block";
   document.body.style.position = "fixed";
+ 
 }
 
 function removeBlur() {
